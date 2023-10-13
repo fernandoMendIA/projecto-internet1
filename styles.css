@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FF0000; /* Rojo */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2rem;
+}
+
+nav {
+  background-color: #008000; /* Verde */
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+section {
+  padding: 20px;
+}
+
+#sobre-mi {
+  background-color: #FF0000; /* Rojo */
+  color: #FFFFFF;
+}
+
+#proyectos {
+  background-color: #008000; /* Verde */
+  color: #FFFFFF;
+}
+
+#contacto {
+  background-color: #FF0000; /* Rojo */
+  color: #FFFFFF;
+}
+
+.project {
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #008000; /* Verde */
+}
+
+footer {
+  background-color: #008000; /* Verde */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem;
+}
