@@ -5,14 +5,14 @@ body {
 }
 
 header {
-  background-color: #FF0000; /* Rojo */
+  background: linear-gradient(to right, #ff6f61, #bfeb5e); /* Degradado de Rojo a Verde */
   color: #FFFFFF;
   text-align: center;
   padding: 2rem;
 }
 
 nav {
-  background-color: #008000; /* Verde */
+  background: linear-gradient(to right, #bfeb5e, #ff6f61); /* Degradado de Verde a Rojo */
   text-align: center;
 }
 
@@ -36,17 +36,17 @@ section {
 }
 
 #sobre-mi {
-  background-color: #FF0000; /* Rojo */
+  background: linear-gradient(to right, #ff6f61, #bfeb5e); /* Degradado de Rojo a Verde */
   color: #FFFFFF;
 }
 
 #proyectos {
-  background-color: #008000; /* Verde */
+  background: linear-gradient(to right, #bfeb5e, #ff6f61); /* Degradado de Verde a Rojo */
   color: #FFFFFF;
 }
 
 #contacto {
-  background-color: #FF0000; /* Rojo */
+  background: linear-gradient(to right, #ff6f61, #bfeb5e); /* Degradado de Rojo a Verde */
   color: #FFFFFF;
 }
 
@@ -54,11 +54,11 @@ section {
   background-color: #FFFFFF;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #008000; /* Verde */
+  border: 1px solid #bfeb5e; /* Verde */
 }
 
 footer {
-  background-color: #008000; /* Verde */
+  background: linear-gradient(to right, #bfeb5e, #ff6f61); /* Degradado de Verde a Rojo */
   color: #FFFFFF;
   text-align: center;
   padding: 1rem;
