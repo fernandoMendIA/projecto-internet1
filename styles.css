@@ -1,18 +1,41 @@
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+
+  padding: 10px;
+
 }
 
+.container{
+  display:grid;
+  grid-template-rows: 1fr 20%;
+  height: 60vh;
+  gap:30px;
+}
+
+.foto{
+  display:flex;
+  gap: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
 header {
-  background: linear-gradient(to right, #ff6f61, #bfeb5e); /* Degradado de Rojo a Verde */
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
   color: #FFFFFF;
   text-align: center;
   padding: 2rem;
 }
 
 nav {
-  background: linear-gradient(to right, #bfeb5e, #ff6f61); /* Degradado de Verde a Rojo */
   text-align: center;
 }
 
@@ -29,25 +52,30 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(86, 255, 131, 0.758);
 }
 
-section {
-  padding: 20px;
-}
+
 
 #sobre-mi {
-  background: linear-gradient(to right, #ff6f61, #bfeb5e); /* Degradado de Rojo a Verde */
   color: #FFFFFF;
+  border: 5px solid #333; /* Borde medio grueso de color gris (#333) */
+  padding: 20px;
+  border-radius: 30px;
 }
 
 #proyectos {
-  background: linear-gradient(to right, #bfeb5e, #ff6f61); /* Degradado de Verde a Rojo */
-  color: #FFFFFF;
+  border: 5px solid #333; /* Borde medio grueso de color gris (#333) */
+  padding: 20px;
+  border-radius: 30px;
 }
 
 #contacto {
-  background: linear-gradient(to right, #ff6f61, #bfeb5e); /* Degradado de Rojo a Verde */
-  color: #FFFFFF;
+  border: 5px solid #333; /* Borde medio grueso de color gris (#333) */
+  padding: 20px;
+  border-radius: 30px;
 }
 
 .project {
@@ -58,8 +86,16 @@ section {
 }
 
 footer {
-  background: linear-gradient(to right, #bfeb5e, #ff6f61); /* Degradado de Verde a Rojo */
   color: #FFFFFF;
   text-align: center;
+  border: 5px solid #333; /* Borde medio grueso de color gris (#333) */
+  padding: 20px;
+  border-radius: 30px;
   padding: 1rem;
+}
+
+.round-image {
+  width: 100px; /* Ancho de la imagen */
+  height: 100px; /* Alto de la imagen (mismo valor que el ancho para hacerla redonda) */
+  border-radius: 50%; /* Establece un borde redondeado del 50% del ancho/alto */
 }
