@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi pagina</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -14,11 +15,15 @@
       <h1>Mi Portafolio</h1>
       <img class="round-image" src="./yo.jpeg" alt="Yo con mucho sueno">
     </div>
-    <nav>
+    <nav class="topnav" id="myTopnav">
       <ul>
           <li><a href="#sobre-mi">Sobre Mí</a></li>
           <li><a href="#tec">Tecnologias</a></li>
           <li><a href="#contacto">Contacto</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          </li>
       </ul>
   </nav>
 </header>
@@ -28,22 +33,33 @@
   
     <section id="sobre-mi">
         <h2>Sobre Mí</h2>
-        <p>¡Hola! Soy Fernando Mendoza, soy tecnico informatico, un apasionado de la tecnologia, electronica, Inteligencia artificial, musica, series, peliculas, etc. Me encanta crear aplicaciones y sitios web impresionantes. Mis hobies son bailar, cantar, escuchar musica etc.</p>
+        <p>¡Hola! Fernando Mendoza, soy tecnico informatico, un apasionado de la tecnologia, electronica, Inteligencia artificial, musica, series, peliculas, etc. Me encanta crear aplicaciones y sitios web impresionantes. Mis hobies son bailar, cantar, escuchar musica etc.</p>
     </section>
-  
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme en inventado@noexiste.com También puedes encontrarme en mi whatsapp. ¡Espero trabajar contigo pronto!</p>
+    
+    <section id="tec">
+      <h2>Tecnologías</h2>
+      <p>Lenguajes de programacion: Python, javascript, C#, Typescript, Php, Html, CSS</p>
+      <p>Tecnologías: Laravel, Flask, Node, React, Next, Astro, Tensorflow, Mysql, MongoDB</p>
     </section>
   </div>
-  <section id="tec">
-    <h2>Tecnologías</h2>
-    <p>Lenguajes de programacion: Python, javascript, C#, Typescript, Php, Html, CSS</p>
-    <p>Tecnologías: Laravel, Flask, Node, React, Next, Astro, Tensorflow, Mysql, MongoDB</p>
+  <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puedes contactarme en inventado@noexiste.com También puedes encontrarme en mi whatsapp. ¡Espero trabajar contigo pronto!</p>
   </section>
   <footer>
       <p>&copy; 2023 Mendoza Fernando corporation</p>
   </footer>
 </div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
 </body>
 </html>
