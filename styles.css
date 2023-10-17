@@ -1,14 +1,19 @@
+html {
+  background: #0f0f0f;
+}
+
+h1 {
+  color: #a0f755;
+}
 
 body {
   font-family: Arial, sans-serif;
-
   padding: 10px;
-
 }
 
 .container{
   display:grid;
-  grid-template-rows: 1fr 20%;
+  grid-template-rows: 1fr 46% 20%;
   height: 60vh;
   gap:30px;
 }
@@ -20,6 +25,7 @@ body {
 
 .cards {
   display: flex;
+
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -60,11 +66,13 @@ nav ul li a {
 
 
 #sobre-mi {
-  color: #FFFFFF;
+  color: #a0f755;
   border: 5px solid #333;
   padding: 20px;
   border-radius: 30px;
 }
+
+
 
 #proyectos {
   border: 5px solid #333;
@@ -73,20 +81,21 @@ nav ul li a {
 }
 
 #contacto {
+  color: #a0f755;
   border: 5px solid #333;
   padding: 20px;
   border-radius: 30px;
 }
 
-.project {
-  background-color: #FFFFFF;
+#tec {
+  color: #a0f755;
+  border: 5px solid #333;
   padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #bfeb5e;
+  border-radius: 30px;
 }
 
 footer {
-  color: #FFFFFF;
+  color: #a0f755;
   text-align: center;
   border: 5px solid #333;
   padding: 20px;
@@ -98,4 +107,36 @@ footer {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 820px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350, 1fr));
+  }
+  
+  nav ul li {
+    display: flex;
+    margin: 10px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+}
+
+h2 {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .foto{
+    display:flex;
+    gap: 30px;
+  }
 }
